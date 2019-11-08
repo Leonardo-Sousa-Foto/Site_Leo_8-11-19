@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio08-11-19</title>
+        <meta charset="utf-8">
+    </head>
+        <body>
+        <center>
+            <h1>Cidade de Florianópolis</h1> 
+            <p>Foto: Leonardo Sousa</p>
+            <img src="Cao 1.jpeg" width="400" alt="Foto Leonardo Sousa" /> 
+            <p id="p1">Florianópolis é a capital do estado brasileiro de Santa Catarina,
+                 na região Sul do país. O município é composto pela ilha principal, 
+                 a ilha de Santa Catarina, a parte continental e algumas pequenas ilhas circundantes.
+                  A cidade tem uma população de 492 977 habitantes, de acordo com estimativas para 2018 
+                  do Instituto Brasileiro de Geografia e Estatística (IBGE).</p>
+            <h3>Ilha da magia </h3>
+            <p id="p2">Antigas populações habitaram a ilha de Santa Catarina em tempos remotos. 
+            Existem indícios de presença do chamado Homem de Sambaqui em sítios arqueológicos
+             cujos registros mais antigos datam de quinto 4 800 a.C. 
+             A ilha possui numerosas inscrições rupestres e algumas oficinas líticas, 
+             notadamente em várias de suas praias.</p>
+             <p>Foto: Leonardo Sousa</p>
+             <a href="http://www.pmf.sc.gov.br/"><img src="Heineken.jpg" width="400" alt="Foto Leonardo Sousa"/></a>
+            <p>Clik na foto e entre no site da prefeitura de Florianópolis.</p>
+             <p>Você pode pesquisar mais sobre Florianópolis no google.com</p>
+            <a href="http://www.google.com/"> Link google </a>
+        
+            <h1> Calculadora</h1>
+            <p>Insira o primeiro número: <input type="number" id="a" /></p>
+            <p>Insira o segundo número: <input type="number" id="b" /></p>
+            
+            <button onclick="somar()">Somar (+)</button>
+            <button onclick="diminuir()">Diminuir (-)</button>
+            <button onclick="multiplicar()">Multiplicar (*)</button>
+            <button onclick="dividir()">Dividir (/)</button>
+            
+            <p>Resultado: <input type="number" id="resultado" readonly/></p>
+            
+            <script>
+            function somar() {
+                var a = Number (document.getElementById('a').value);
+                var b = Number (document.getElementById('b').value);
+                var resultado = document.getElementById('resultado');
+                resultado.value = a + b;
+                console.log('Somando elementos: ' + a + ' + ' + b + ' = ' + resultado.value);
+            }
+            
+            function diminuir() {
+                var a = Number (document.getElementById('a').value);
+                var b = Number (document.getElementById('b').value);
+                var resultado = document.getElementById('resultado');
+                resultado.value = a - b;
+                console.log('Diminuindo elementos: ' + a + ' - ' + b + ' = ' + resultado.value);
+            }
+            
+            function multiplicar() {
+                var a = Number (document.getElementById('a').value);
+                var b = Number (document.getElementById('b').value);
+                var resultado = document.getElementById('resultado');
+                resultado.value = a * b;
+                console.log('Multiplicando elementos: ' + a + ' * ' + b + ' = ' + resultado.value);
+            }
+            
+            function dividir() {
+                var a = Number (document.getElementById('a').value);
+                var b = Number (document.getElementById('b').value);
+                var resultado = document.getElementById('resultado');
+                resultado.value = a / b;
+                console.log('Dividindo elementos: ' + a + ' / ' + b + ' = ' + resultado.value);
+            }
+            </script>
+            </center>
+            <center>
+            <h1>Listas ordenada e não ordenada</h1>
+            <h2>Listas não ordenadas com C</h2>
+            <ul>
+                <li>03 Cerveja</li>
+                <li>01 Carne</li>
+                <li>02 Carvão</li> 
+    
+            </ul>
+    
+            <h2>Lista ordenada (Ordered list)</h2>
+            <ol>
+                    <li>01 Carne</li>
+                    <li>02 Carvão</li>
+                    <li>03 Cerveja</li> 
+        
+            </ol>
+        </center>
+          <center>
+            <br/>
+            <br/>
+            <h1>Tabelas</h1>
+            <table width="100%" border="2">
+				<caption> Veículos </caption> 
+				<tr bgcolor="green">
+    				<th> Carro 1 </th>
+    				<th> Carro 2 </th>
+    				<th bgcolor="green"> Carro 3 </th>
+    			</tr>
+    			<tr>
+    				<td> <center> <font face="arial"> Fusca </font>  </center> </td>
+    				<td> <center> <font face="arial"> Sedan </font> </center> </td>
+    				<td> <center> <font face="arial"> Ferrari </font> </center> </td>
+    			</tr>
+
+    			<tr>
+    				<td> <center> <font face="arial"> Fusca </font> </center> </td>
+    				<td> <center> <font face="arial"> Sedan </font> </center> </td>
+    				<td> <center> <font face="arial"> Ferrari </font> </center> </td>
+    			</tr>
+
+    			<tr>
+    				<td> <center> <font face="arial"> Fusca </font> </center> </td>
+    				<td> <center> <font face="arial"> Sedan </font> </center> </td>
+    				<td> <center> <font face="arial"> Ferrari </font> </center> </td>
+    			</tr>
+
+			</table>
+        
+        </center>
+        <br/>
+        <br/>  <br/>
+        <br/>  <br/>
+        <br/>
+    <center>
+        <form>
+<h2>CAMPOS PARA PREENCHER</h2>
+
+            <input type="text" size="10" maxlength="5" /><br/><br/>
+            <input type="text" size="10" maxlength="11" placeholder="Digite o CPF" value="" /><br/><br/>
+            <input type="password" size="20" /><br/><br/>
+            <input type="checkbox" name= /><br/><br/>
+            <input type="text" size="10" disabled placeholder="Valor" /><br/><br/>
+    
+            <br/><br/>
+            <br/><br/>
+
+            <h2>Marque uma opção</h2>
+            <br/><br/>
+            
+            <input type="radio" id="radio11" name="grupo1" /><label for="radio11"></label>Radio Opção 1.1</label><br/><br/>
+            <input type="radio" id="radio12" name="grupo1" /><label for="radio12"></label>Radio Opção 1.2</label><br/><br/>
+            <br/>
+    
+            <input type="radio" id="radio21" name="grupo2" /><label for="radio21"></label>Radio Opção 2.1</label><br/><br/>
+            <input type="radio" id="radio22" name="grupo2" /><label for="radio22"></label>Radio Opção 2.2</label><br/><br/>
+    
+            <br/><br/>
+            <br/><br/>
+    
+            <fieldset >
+                    <legend>Produto</legend>
+                   
+            <select size="1">
+                    <br/><br/>
+                    
+                <option></option>
+                <br/><br/>
+               
+                <option>Cerveja</option>
+                <option>Cachaça</option>
+                <option>Agua</option>
+                <option>Suco</option>
+                <option>Wisque</option>
+    
+            </select>
+    
+            <button onclick="">Botão</button>
+            <br/><br/>
+            <br/><br/>
+      
+    
+            <input type="reset" />
+            <br/>
+            <input type="submit" action="Exemplos tags.html" value="Enviar opções" />
+    
+        </fieldset>
+       </form>
+    
+    
+    
+    
+    
+            <br/>
+            <hr/>
+            <br/>
+            <br/>
+            <ul class="menu">
+                <ul class="itens" id="menu1"><a href="#">menu 1</a></ul>
+                <ul class="itens" id="menu2"><a href="#">menu 2</a></ul>
+                <ul class="itens" id="menu3"><a href="#">menu 3</a></ul>
+            </ul>
+            <div class="formulario">
+                <form>
+                    <div class="campo" id="a">Campo a: <input type="text" id="ca" /></div>
+                    <div class="campo" id="b">Campo b: <input type="text" id="cb" /></div>
+                    <div class="campo" id="c">Campo c: <input type="text" id="cc" /></div>
+                    <div class="campo" id="d">Campo d: <input type="text" id="cd" /></div>
+                </form>
+            </center>
+
+        </body>
+</html>
